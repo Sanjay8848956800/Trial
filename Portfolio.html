@@ -1,0 +1,31 @@
+import java.util.*;
+class box
+{
+int h ;
+int b;
+int l;
+box(int x , int y)
+{
+h=x;
+b=y;
+l=11;
+}
+box(int x, int y , int z)
+{
+h=x;
+b=y;
+l=z;
+}
+double vol()
+{
+return h*b*l;
+}
+}
+class const1
+{
+public static void main(String[] args)
+{
+box b=new box(20,22,24);
+System.out.println("volume=" +b.vol());
+}
+}
